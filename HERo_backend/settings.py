@@ -9,7 +9,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['https://hero-backend-nofc.onrender.com']
+ALLOWED_HOSTS = ['hero-backend-nofc.onrender.com']
 
 INSTALLED_APPS = [
     "django.contrib.admin",

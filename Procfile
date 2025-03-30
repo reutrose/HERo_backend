@@ -1,0 +1,1 @@
+web: gunicorn HERo_backend.wsgi
