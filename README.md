@@ -74,7 +74,7 @@ This project is a server-side web application built using Django and Django REST
    python manage.py makemigrations
    ```
    ```sh
-      python manage.py makemigrations api
+   python manage.py makemigrations api
    ```
    ```sh
    python manage.py migrate
