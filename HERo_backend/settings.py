@@ -58,6 +58,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5177",
     "http://127.0.0.1:5178",
     "http://127.0.0.1:5179",
+    "https://hero-blog-frontend.onrender.com"
 ]
 
 ROOT_URLCONF = "HERo_backend.urls"
