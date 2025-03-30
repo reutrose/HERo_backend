@@ -47,8 +47,7 @@ This project is a server-side web application built using Django and Django REST
 
 1. Clone the repository:
    ```sh
-   git clone <repo-url>
-   cd <project-folder>
+   git clone https://github.com/reutrose/HERo_backend
    ```
 2. Create a virtual environment and activate it:
    ```sh
@@ -127,12 +126,6 @@ tzdata==2025.1
 - The `.env` file is excluded from the repository for security reasons.
 - If the `.env` file is missing, you must create your own PostgreSQL database and configure the connection in the `.env` file.
 - The frontend (React) is in a separate repository.
-
-## Submission Instructions
-
-- Ensure that the `venv` folder is excluded from the repository.
-- Upload the project to GitHub/GitLab.
-- Submit the repository link via the digital campus assignment box.
 
 ---
 
