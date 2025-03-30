@@ -52,8 +52,14 @@ This project is a server-side web application built using Django and Django REST
 2. Create a virtual environment and activate it:
    ```sh
    python -m venv venv
-   `source venv/bin/activate` # Mac
-   `venv\Scripts\activate` # Windows
+   ```
+   Then in Mac:
+   ```sh
+   source venv/bin/activate
+   ```
+   Or in Windows:
+   ```sh
+   venv\Scripts\activate
    ```
 3. Install dependencies:
    ```sh
@@ -86,10 +92,9 @@ This project is a server-side web application built using Django and Django REST
    python manage.py runserver
    ```
 9. Go to:
-
-```sh
+   ```sh
    http://127.0.0.1:8000/api/
-```
+   ```
 
 ## API Endpoints
 
