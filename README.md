@@ -48,11 +48,13 @@ This project is a server-side web application built using Django and Django REST
 1. Clone the repository:
    ```sh
    git clone https://github.com/reutrose/HERo_backend
+   cd HERo_backend
    ```
 2. Create a virtual environment and activate it:
    ```sh
    python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   `source venv/bin/activate` # Mac
+   `venv\Scripts\activate` # Windows
    ```
 3. Install dependencies:
    ```sh
@@ -60,15 +62,23 @@ This project is a server-side web application built using Django and Django REST
    ```
 4. Set up environment variables:
    - Make sure to include an `.env` file in the project root with the relevant content.
+   - If you do not have access to the `.env` file, create a PostgreSQL database in PG Admin, and then create an `.env` file that contains: (DB_NAME, DB_USER, DB_PASSWORD, DB_HOST, DB_PORT).
+   - For your information, that project contains an option for database seeding. For that, the `.env` file is necessary, and without it, the seeding isn't allowed.
 5. Apply database migrations:
    ```sh
+   python manage.py makemigrations
+   python manage.py makemigrations api
    python manage.py migrate
    ```
-6. Seed the database:
-   ```sh
-   python manage.py seed_database
+6. Create Superuser:
    ```
-7. Start the development server:
+   python manage.py createsuperuser
+   ```
+7. Seed the database:
+   ```sh
+   python manage.py seed_db
+   ```
+8. Start the development server:
    ```sh
    python manage.py runserver
    ```

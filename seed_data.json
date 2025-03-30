@@ -1,246 +1,245 @@
 [
-     {
-          "model": "auth.user",
-          "pk": 1,
-          "fields": {
-               "password": "Abcde12345!!!",
-               "last_login": null,
-               "is_superuser": false,
-               "username": "admin",
-               "first_name": "",
-               "last_name": "",
-               "email": "",
-               "is_staff": false,
-               "is_active": true,
-               "date_joined": "2025-03-16T08:54:48Z",
-               "groups": [
-                    3
-               ],
-               "user_permissions": []
-          }
-     },
-     {
-          "model": "auth.user",
-          "pk": 2,
-          "fields": {
-               "password": "Abcde12345!!!",
-               "last_login": null,
-               "is_superuser": false,
-               "username": "moderator",
-               "first_name": "",
-               "last_name": "",
-               "email": "",
-               "is_staff": false,
-               "is_active": true,
-               "date_joined": "2025-03-16T08:54:47Z",
-               "groups": [
-                    2
-               ],
-               "user_permissions": []
-          }
-     },
-     {
-          "model": "auth.user",
-          "pk": 3,
-          "fields": {
-               "password": "Abcde12345!!!",
-               "last_login": null,
-               "is_superuser": false,
-               "username": "user",
-               "first_name": "",
-               "last_name": "",
-               "email": "",
-               "is_staff": false,
-               "is_active": true,
-               "date_joined": "2025-03-16T08:54:47Z",
-               "groups": [
-                    1
-               ],
-               "user_permissions": []
-          }
-     },
-     {
-          "model": "auth.group",
-          "pk": 1,
-          "fields": {
-               "name": "Users",
-               "permissions": [
-                    52,
-                    61,
-                    62,
-                    63,
-                    64,
-                    57,
-                    58,
-                    59,
-                    60,
-                    53,
-                    56,
-                    44
-               ]
-          }
-     },
-     {
-          "model": "auth.group",
-          "pk": 2,
-          "fields": {
-               "name": "Moderators",
-               "permissions": [
-                    49,
-                    50,
-                    51,
-                    52,
-                    61,
-                    62,
-                    63,
-                    64,
-                    57,
-                    58,
-                    59,
-                    60,
-                    53,
-                    56,
-                    41,
-                    42,
-                    43,
-                    44
-               ]
-          }
-     },
-     {
-          "model": "auth.group",
-          "pk": 3,
-          "fields": {
-               "name": "Admins",
-               "permissions": [
-                    49,
-                    50,
-                    51,
-                    52,
-                    61,
-                    62,
-                    63,
-                    64,
-                    57,
-                    58,
-                    59,
-                    60,
-                    53,
-                    55,
-                    56,
-                    41,
-                    42,
-                    43,
-                    44
-               ]
-          }
-     },
-     {
-          "model": "api.article",
-          "pk": 1,
-          "fields": {
-               "author": 2,
-               "title": "The Importance of Female Leadership in Business",
-               "description": "Exploring the role of women in leadership and the importance of diversity in decision-making processes.",
-               "content": "In today's world, women are making great strides in leadership roles across various industries. Studies show that organizations with female leaders are more likely to have diverse and inclusive workplace environments. It's time for women to break the barriers in business and lead the charge toward a more equal and prosperous future.",
-               "image": "",
-               "created_at": "2025-03-16T10:02:07.118Z",
-               "updated_at": "2025-03-16T10:02:07.118Z",
-               "status": "published"
-          }
-     },
-     {
-          "model": "api.article",
-          "pk": 2,
-          "fields": {
-               "author": 2,
-               "title": "Breaking the Glass Ceiling: Stories of Empowered Women",
-               "description": "Inspiring stories of women who broke the glass ceiling and paved the way for others to succeed.",
-               "content": "Breaking the glass ceiling is not easy, but women have been doing it for decades. From politics to science, female trailblazers have changed the world by challenging societal norms and shattering stereotypes. These women have become role models for the next generation of leaders, proving that the sky is the limit for those who believe in their power.",
-               "image": "",
-               "created_at": "2025-03-16T10:03:01.744Z",
-               "updated_at": "2025-03-16T10:03:01.744Z",
-               "status": "published"
-          }
-     },
-     {
-          "model": "api.article",
-          "pk": 3,
-          "fields": {
-               "author": 2,
-               "title": "The Power of Women's Health and Well-being",
-               "description": "Understanding the importance of mental and physical well-being in empowering women to live their best lives.",
-               "content": "Women's health is essential to building a strong and empowered community. From mental health to physical well-being, women must prioritize self-care and wellness. This article focuses on how taking care of one's health leads to improved confidence and strength, enabling women to pursue their dreams and lead their communities with passion.",
-               "image": "",
-               "created_at": "2025-03-16T10:03:55.305Z",
-               "updated_at": "2025-03-16T10:03:55.305Z",
-               "status": "published"
-          }
-     },
-     {
-          "model": "api.comment",
-          "pk": 1,
-          "fields": {
-               "author": 1,
-               "article": 1,
-               "content": "Great one, thanks!",
-               "created_at": "2025-03-16T10:04:29.113Z",
-               "updated_at": "2025-03-16T10:04:29.113Z",
-               "reply_to": null
-          }
-     },
-     {
-          "model": "api.comment",
-          "pk": 2,
-          "fields": {
-               "author": 2,
-               "article": 1,
-               "content": "Glad you liked it!",
-               "created_at": "2025-03-16T10:04:45.530Z",
-               "updated_at": "2025-03-16T10:04:45.530Z",
-               "reply_to": 1
-          }
-     },
-     {
-          "model": "api.comment",
-          "pk": 3,
-          "fields": {
-               "author": 1,
-               "article": 2,
-               "content": "Very helpful!",
-               "created_at": "2025-03-16T10:04:55.956Z",
-               "updated_at": "2025-03-16T10:04:55.956Z",
-               "reply_to": null
-          }
-     },
-     {
-          "model": "api.articlelike",
-          "pk": 1,
-          "fields": {
-               "user": 1,
-               "article": 1,
-               "reaction": "like",
-               "created_at": "2025-03-16T10:05:17.241Z"
-          }
-     },
-     {
-          "model": "api.articlelike",
-          "pk": 2,
-          "fields": {
-               "user": 1,
-               "article": 2,
-               "reaction": "like",
-               "created_at": "2025-03-16T10:05:22.906Z"
-          }
-     },
-     {
-          "model": "api.articlelike",
-          "pk": 3,
-          "fields": {
-               "user": 1,
-               "article": 3,
-               "reaction": "dislike",
-               "created_at": "2025-03-16T10:05:29.815Z"
-          }
-     }
+	{
+		"model": "auth.user",
+		"pk": 1,
+		"fields": {
+			"password": "",
+			"last_login": null,
+			"is_superuser": false,
+			"username": "admin",
+			"first_name": "",
+			"last_name": "",
+			"email": "",
+			"is_staff": false,
+			"is_active": true,
+			"date_joined": "2025-03-16T08:54:48Z",
+			"groups": [3],
+			"user_permissions": []
+		}
+	},
+	{
+		"model": "auth.user",
+		"pk": 2,
+		"fields": {
+			"password": "",
+			"last_login": null,
+			"is_superuser": false,
+			"username": "moderator",
+			"first_name": "",
+			"last_name": "",
+			"email": "",
+			"is_staff": false,
+			"is_active": true,
+			"date_joined": "2025-03-16T08:54:47Z",
+			"groups": [2],
+			"user_permissions": []
+		}
+	},
+	{
+		"model": "auth.user",
+		"pk": 3,
+		"fields": {
+			"password": "",
+			"last_login": null,
+			"is_superuser": false,
+			"username": "user",
+			"first_name": "",
+			"last_name": "",
+			"email": "",
+			"is_staff": false,
+			"is_active": true,
+			"date_joined": "2025-03-16T08:54:47Z",
+			"groups": [1],
+			"user_permissions": []
+		}
+	},
+	{
+		"model": "api.userprofile",
+		"pk": 1,
+		"fields": {
+			"user": 1,
+			"first_name": "Admin",
+			"last_name": "User",
+			"profession": "Admin",
+			"bio": "Administrator of the platform.",
+			"profile_pic": "",
+			"birth_date": null,
+			"created_at": "2025-03-16T08:54:48Z",
+			"updated_at": "2025-03-16T08:54:48Z"
+		}
+	},
+	{
+		"model": "api.userprofile",
+		"pk": 2,
+		"fields": {
+			"user": 2,
+			"first_name": "Moderator",
+			"last_name": "User",
+			"profession": "Moderator",
+			"bio": "Platform moderator.",
+			"profile_pic": "",
+			"birth_date": null,
+			"created_at": "2025-03-16T08:54:47Z",
+			"updated_at": "2025-03-16T08:54:47Z"
+		}
+	},
+	{
+		"model": "api.userprofile",
+		"pk": 3,
+		"fields": {
+			"user": 3,
+			"first_name": "Regular",
+			"last_name": "User",
+			"profession": "User",
+			"bio": "A regular user.",
+			"profile_pic": "",
+			"birth_date": null,
+			"created_at": "2025-03-16T08:54:47Z",
+			"updated_at": "2025-03-16T08:54:47Z"
+		}
+	},
+	{
+		"model": "api.article",
+		"pk": 1,
+		"fields": {
+			"author": 2,
+			"title": "The Importance of Female Leadership in Business",
+			"description": "Exploring the role of women in leadership and the importance of diversity in decision-making processes.",
+			"content": "In today's world, women are making great strides in leadership roles across various industries. Studies show that organizations with female leaders are more likely to have diverse and inclusive workplace environments. It's time for women to break the barriers in business and lead the charge toward a more equal and prosperous future.",
+			"image": "",
+			"created_at": "2025-03-16T10:02:07.118Z",
+			"updated_at": "2025-03-16T10:02:07.118Z",
+			"status": "published"
+		}
+	},
+	{
+		"model": "api.article",
+		"pk": 2,
+		"fields": {
+			"author": 2,
+			"title": "Breaking the Glass Ceiling: Stories of Empowered Women",
+			"description": "Inspiring stories of women who broke the glass ceiling and paved the way for others to succeed.",
+			"content": "Breaking the glass ceiling is not easy, but women have been doing it for decades. From politics to science, female trailblazers have changed the world by challenging societal norms and shattering stereotypes. These women have become role models for the next generation of leaders, proving that the sky is the limit for those who believe in their power.",
+			"image": "",
+			"created_at": "2025-03-16T10:03:01.744Z",
+			"updated_at": "2025-03-16T10:03:01.744Z",
+			"status": "published"
+		}
+	},
+	{
+		"model": "api.article",
+		"pk": 3,
+		"fields": {
+			"author": 2,
+			"title": "The Power of Women's Health and Well-being",
+			"description": "Understanding the importance of mental and physical well-being in empowering women to live their best lives.",
+			"content": "Women's health is essential to building a strong and empowered community. From mental health to physical well-being, women must prioritize self-care and wellness. This article focuses on how taking care of one's health leads to improved confidence and strength, enabling women to pursue their dreams and lead their communities with passion.",
+			"image": "",
+			"created_at": "2025-03-16T10:03:55.305Z",
+			"updated_at": "2025-03-16T10:03:55.305Z",
+			"status": "published"
+		}
+	},
+	{
+		"model": "api.comment",
+		"pk": 1,
+		"fields": {
+			"author": 1,
+			"article": 1,
+			"content": "Great one, thanks!",
+			"created_at": "2025-03-16T10:04:29.113Z",
+			"updated_at": "2025-03-16T10:04:29.113Z",
+			"reply_to": null
+		}
+	},
+	{
+		"model": "api.comment",
+		"pk": 2,
+		"fields": {
+			"author": 2,
+			"article": 1,
+			"content": "Glad you liked it!",
+			"created_at": "2025-03-16T10:04:45.530Z",
+			"updated_at": "2025-03-16T10:04:45.530Z",
+			"reply_to": 1
+		}
+	},
+	{
+		"model": "api.comment",
+		"pk": 3,
+		"fields": {
+			"author": 1,
+			"article": 2,
+			"content": "Very helpful!",
+			"created_at": "2025-03-16T10:04:55.956Z",
+			"updated_at": "2025-03-16T10:04:55.956Z",
+			"reply_to": null
+		}
+	},
+	{
+		"model": "api.comment",
+		"pk": 4,
+		"fields": {
+			"author": 3,
+			"article": 2,
+			"content": "I think so too!",
+			"created_at": "2025-03-16T10:04:29.113Z",
+			"updated_at": "2025-03-16T10:04:29.113Z",
+			"reply_to": 3
+		}
+	},
+	{
+		"model": "api.comment",
+		"pk": 5,
+		"fields": {
+			"author": 3,
+			"article": 3,
+			"content": "Good work!",
+			"created_at": "2025-03-16T10:04:45.530Z",
+			"updated_at": "2025-03-16T10:04:45.530Z",
+			"reply_to": null
+		}
+	},
+	{
+		"model": "api.comment",
+		"pk": 6,
+		"fields": {
+			"author": 2,
+			"article": 3,
+			"content": "Thanks!",
+			"created_at": "2025-03-16T10:04:55.956Z",
+			"updated_at": "2025-03-16T10:04:55.956Z",
+			"reply_to": 5
+		}
+	},
+	{
+		"model": "api.articlelike",
+		"pk": 1,
+		"fields": {
+			"user": 1,
+			"article": 1,
+			"reaction": "like",
+			"created_at": "2025-03-16T10:05:17.241Z"
+		}
+	},
+	{
+		"model": "api.articlelike",
+		"pk": 2,
+		"fields": {
+			"user": 1,
+			"article": 2,
+			"reaction": "like",
+			"created_at": "2025-03-16T10:05:22.906Z"
+		}
+	},
+	{
+		"model": "api.articlelike",
+		"pk": 3,
+		"fields": {
+			"user": 3,
+			"article": 3,
+			"reaction": "like",
+			"created_at": "2025-03-16T10:05:29.815Z"
+		}
+	}
 ]
