@@ -1,18 +1,31 @@
+# Python bytecode files
 *.pyc
 *.pyo
 *.pyd
 __pycache__/
+
+# Virtual environment directories
 .venv/
 venv/
 ENV/
 env/
+
+# IDE/editor specific files
 .vscode/
 .idea/
+
+# Log files
 *.log
+
+# Database files (SQLite)
 *.sqlite3
 db.sqlite3
+
+# Media and static directories (static files generated at runtime should be excluded)
 media/
 static/
+
+# Egg and distribution files
 *.egg
 *.egg-info
 dist/
@@ -22,17 +35,31 @@ parts/
 var/
 sdist/
 wheels/
+
+# Manifest and spec files
 *.manifest
 *.spec
+
+# Environment variable files (don't push sensitive files like .env)
 .env
 .env.*
 *.env
-*.manifest
-*.spec
+
+# Coverage and testing files
 .coverage
 *.cover
 *.hypothesis/
 .pytest_cache/
 .ipynb_checkpoints
+
+# OS specific files
 .DS_Store
 Thumbs.db
+
+# Ignore files that should be generated in production (e.g., migrations can be committed)
+# Make sure to commit the migration folder if it's needed
+!*/migrations/
+
+# Ensure requirements.txt and Procfile are not ignored
+!requirements.txt
+!Procfile
