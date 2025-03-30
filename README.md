@@ -48,7 +48,6 @@ This project is a server-side web application built using Django and Django REST
 1. Clone the repository:
    ```sh
    git clone https://github.com/reutrose/HERo_backend
-   cd HERo_backend
    ```
 2. Create a virtual environment and activate it:
    ```sh
@@ -67,7 +66,11 @@ This project is a server-side web application built using Django and Django REST
 5. Apply database migrations:
    ```sh
    python manage.py makemigrations
-   python manage.py makemigrations api
+   ```
+   ```sh
+      python manage.py makemigrations api
+   ```
+   ```sh
    python manage.py migrate
    ```
 6. Create Superuser:
@@ -82,6 +85,11 @@ This project is a server-side web application built using Django and Django REST
    ```sh
    python manage.py runserver
    ```
+9. Go to:
+
+```sh
+   http://127.0.0.1:8000/api/
+```
 
 ## API Endpoints
 
