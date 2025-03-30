@@ -61,6 +61,7 @@ class AuthViewSet(ViewSet):
                pass
           return Response({"message":"Logged out successfully!"})
 
+@method_decorator(csrf_exempt, name='dispatch')
 class UserViewSet(ModelViewSet):
      queryset = User.objects.all()
      serializer_class = UserSerializer

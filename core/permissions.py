@@ -4,50 +4,39 @@ from rest_framework.permissions import BasePermission, SAFE_METHODS
 """User Permissions"""
 class UserPermissionClass(BasePermission):
      def has_permission(self, request, view):
-          if request.method == 'GET':
-               if request.user.is_authenticated:
-                    return (
-                         request.user == view.get_object() or
-                         request.user.is_superuser or 
-                         request.user.groups.filter(name='Admins').exists()
-                         )
-               return False
+          if request.method == "GET":
+               return request.user.is_authenticated
           
-          elif request.method == 'PUT':
-               return request.user == view.get_object()
+          elif request.method == "PUT":
+               return request.user.is_authenticated
           
-          elif request.method == 'DELETE':
-               if request.user.is_authenticated:
-                    return (
-                         request.user == view.get_object() or 
-                         request.user.is_superuser or 
-                         request.user.groups.filter(name='Admins').exists()
-                         )
-               return False
+          elif request.method == "DELETE":
+               return request.user.is_authenticated
           
           return False
-     
+
      def has_object_permission(self, request, view, obj):
-          if request.method == 'GET':
+          if request.method == "GET":
                return (
-                    obj == request.user or 
-                    request.user.is_superuser or 
-                    request.user.groups.filter(name='Admins').exists()
-                    )
-          elif request.method == 'POST':
+                    obj == request.user
+                    or request.user.is_superuser
+                    or request.user.groups.filter(name="Admins").exists()
+               )
+          elif request.method == "POST":
                return (
-                    request.user.is_superuser or 
-                    request.user.groups.filter(name='Admins').exists()
-                    )
-          elif request.method == 'PUT':
+                    request.user.is_superuser
+                    or request.user.groups.filter(name="Admins").exists()
+               )
+          elif request.method == "PUT":
                return obj == request.user
-          elif request.method == 'DELETE':
+          elif request.method == "DELETE":
                return (
-                    obj == request.user or 
-                    request.user.is_superuser or 
-                    request.user.groups.filter(name='Admins').exists()
-                    )
+                    obj == request.user
+                    or request.user.is_superuser
+                    or request.user.groups.filter(name="Admins").exists()
+               )
           return False
+
 
 """User Profile Permissions"""
 class UserProfilePermissionClass(BasePermission):
